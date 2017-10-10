@@ -35,6 +35,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2839B16C1F8D4DD300A4A4E1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				285F0DAC1F8D3CF7009FB484 /* AppDelegate.swift */,
+				285F0DAE1F8D3CF7009FB484 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2839B16D1F8D4E2C00A4A4E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				285F0DB01F8D3CF7009FB484 /* Main.storyboard */,
+				285F0DB51F8D3CF7009FB484 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2839B16E1F8D4E4700A4A4E1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				285F0DB31F8D3CF7009FB484 /* Assets.xcassets */,
+				285F0DB81F8D3CF7009FB484 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		285F0DA01F8D3CF7009FB484 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +81,9 @@
 		285F0DAB1F8D3CF7009FB484 /* RecreationOfColor */ = {
 			isa = PBXGroup;
 			children = (
-				285F0DAC1F8D3CF7009FB484 /* AppDelegate.swift */,
-				285F0DAE1F8D3CF7009FB484 /* ViewController.swift */,
-				285F0DB01F8D3CF7009FB484 /* Main.storyboard */,
-				285F0DB31F8D3CF7009FB484 /* Assets.xcassets */,
-				285F0DB51F8D3CF7009FB484 /* LaunchScreen.storyboard */,
-				285F0DB81F8D3CF7009FB484 /* Info.plist */,
+				2839B16C1F8D4DD300A4A4E1 /* Controller */,
+				2839B16D1F8D4E2C00A4A4E1 /* View */,
+				2839B16E1F8D4E4700A4A4E1 /* Resources */,
 			);
 			path = RecreationOfColor;
 			sourceTree = "<group>";
@@ -275,7 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RecreationOfColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RecreationOfColor/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ctech.RecreationOfColor;
@@ -290,7 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RecreationOfColor/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/RecreationOfColor/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ctech.RecreationOfColor;
