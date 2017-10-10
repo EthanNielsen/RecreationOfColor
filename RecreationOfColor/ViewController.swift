@@ -14,15 +14,19 @@ class ViewController: UIViewController
     
     @IBAction func secondMethod(_ sender: UIButton)
     {
-        if ( secondButton.backgroundColor == .blue)
-        {
-            secondButton.backgroundColor = .yellow
-        }
-        else
-        {
-            secondButton.backgroundColor = .orange
-        }
+        
+        secondButton.backgroundColor = createRandomColor()
         view.backgroundColor = createRandomColor()
+        secondButton.setTitleColor(createRandomColor(), for: .normal)
+//        if ( secondButton.backgroundColor == .blue)
+//        {
+//            secondButton.backgroundColor = .yellow
+//        }
+//        else
+//        {
+//            secondButton.backgroundColor = .orange
+//        }
+//        view.backgroundColor = createRandomColor()
     }
     
     private func createRandomColor() -> UIColor
