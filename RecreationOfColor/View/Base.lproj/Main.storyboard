@@ -30,8 +30,7 @@
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="ColorMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJV-Ab-Swp"/>
-                                    <action selector="secondMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lvS-1l-0ac"/>
+                                    <action selector="secondMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQB-Gv-gtt"/>
                                 </connections>
                             </button>
                         </subviews>
