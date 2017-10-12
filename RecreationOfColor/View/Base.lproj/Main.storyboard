@@ -65,10 +65,10 @@
             </objects>
             <point key="canvasLocation" x="-15.199999999999999" y="-60.719640179910051"/>
         </scene>
-        <!--View Controller-->
+        <!--Second Screen Controller-->
         <scene sceneID="uR9-rw-n32">
             <objects>
-                <viewController id="q8h-dB-wSd" sceneMemberID="viewController">
+                <viewController id="q8h-dB-wSd" customClass="SecondScreenController" customModule="RecreationOfColor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9aS-jM-shS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
