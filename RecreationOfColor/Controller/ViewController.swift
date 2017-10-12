@@ -10,10 +10,13 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    @IBOutlet weak var clickProgress: UIProgressView!
+    @IBOutlet var clickProgressCollection: [UIView]!
+    
     @IBOutlet weak var myColorApp: UILabel!
     @IBOutlet var myColorCollection: [UILabel]!
-    @IBOutlet weak var secondButton: UIButton!
     
+    @IBOutlet weak var secondButton: UIButton!
     @IBAction func secondMethod(_ sender: UIButton)
     {
         
@@ -31,8 +34,22 @@ class ViewController: UIViewController
         view.backgroundColor = createRandomColor()
         
         myColorApp.textColor = createRandomColor()
-        
         myColorApp.backgroundColor = createRandomColor()
+        
+        
+        var timer = Timer()
+        
+        func viewDidLoad()
+        {
+            super.viewDidLoad()
+            timer = Timer.scheduledTimer(timeInterval: 0.005, target: self, selector: #selector(getter: secondButton), userInfo: nil, repeats: true)
+            
+        }
+        
+        func go()
+        {
+            clickProgress.progress = 0.005
+        }
         
     }
     
