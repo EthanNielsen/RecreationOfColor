@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController
 {
     @IBOutlet weak var myColorApp: UILabel!
+    @IBOutlet var myColorCollection: [UILabel]!
     @IBOutlet weak var secondButton: UIButton!
     
     @IBAction func secondMethod(_ sender: UIButton)
@@ -28,6 +29,11 @@ class ViewController: UIViewController
             secondButton.backgroundColor = createRandomColor()
         }
         view.backgroundColor = createRandomColor()
+        
+        myColorApp.backgroundColor = createRandomColor()
+        
+        
+        
     }
     
     private func createRandomColor() -> UIColor
