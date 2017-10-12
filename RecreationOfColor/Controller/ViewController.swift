@@ -30,9 +30,9 @@ class ViewController: UIViewController
         }
         view.backgroundColor = createRandomColor()
         
+        myColorApp.textColor = createRandomColor()
+        
         myColorApp.backgroundColor = createRandomColor()
-        
-        
         
     }
     
