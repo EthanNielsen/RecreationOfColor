@@ -18,15 +18,15 @@ class ViewController: UIViewController
         secondButton.backgroundColor = createRandomColor()
         view.backgroundColor = createRandomColor()
         secondButton.setTitleColor(createRandomColor(), for: .normal)
-//        if ( secondButton.backgroundColor == .blue)
-//        {
-//            secondButton.backgroundColor = .yellow
-//        }
-//        else
-//        {
-//            secondButton.backgroundColor = .orange
-//        }
-//        view.backgroundColor = createRandomColor()
+        if ( secondButton.backgroundColor == .blue)
+        {
+            secondButton.backgroundColor = .yellow
+        }
+        else
+        {
+            secondButton.backgroundColor = .orange
+        }
+        view.backgroundColor = createRandomColor()
     }
     
     private func createRandomColor() -> UIColor
