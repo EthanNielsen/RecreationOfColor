@@ -13,6 +13,7 @@
 		285F0DB41F8D3CF7009FB484 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 285F0DB31F8D3CF7009FB484 /* Assets.xcassets */; };
 		285F0DB71F8D3CF7009FB484 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 285F0DB51F8D3CF7009FB484 /* LaunchScreen.storyboard */; };
 		289A7EBD1F8FF547005B2B87 /* SecondScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289A7EBC1F8FF547005B2B87 /* SecondScreenController.swift */; };
+		289A7EC21F8FFA01005B2B87 /* ColorTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289A7EC11F8FFA01005B2B87 /* ColorTools.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		285F0DB61F8D3CF7009FB484 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		285F0DB81F8D3CF7009FB484 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		289A7EBC1F8FF547005B2B87 /* SecondScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreenController.swift; sourceTree = "<group>"; };
+		289A7EC11F8FFA01005B2B87 /* ColorTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTools.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,11 +86,20 @@
 		285F0DAB1F8D3CF7009FB484 /* RecreationOfColor */ = {
 			isa = PBXGroup;
 			children = (
+				289A7EC01F8FF9E8005B2B87 /* Model */,
 				2839B16C1F8D4DD300A4A4E1 /* Controller */,
 				2839B16D1F8D4E2C00A4A4E1 /* View */,
 				2839B16E1F8D4E4700A4A4E1 /* Resources */,
 			);
 			path = RecreationOfColor;
+			sourceTree = "<group>";
+		};
+		289A7EC01F8FF9E8005B2B87 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				289A7EC11F8FFA01005B2B87 /* ColorTools.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +177,7 @@
 				285F0DAF1F8D3CF7009FB484 /* ViewController.swift in Sources */,
 				285F0DAD1F8D3CF7009FB484 /* AppDelegate.swift in Sources */,
 				289A7EBD1F8FF547005B2B87 /* SecondScreenController.swift in Sources */,
+				289A7EC21F8FFA01005B2B87 /* ColorTools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController
 {
+    
+    private lazy var colorTools : ColorTools = ColorTools()
+    
     @IBOutlet weak var clickProgress: UIProgressView!
     @IBOutlet var clickProgressCollection: [UIView]!
     
@@ -20,21 +23,21 @@ class ViewController: UIViewController
     @IBAction func secondMethod(_ sender: UIButton)
     {
         
-        secondButton.backgroundColor = createRandomColor()
-        view.backgroundColor = createRandomColor()
-        secondButton.setTitleColor(createRandomColor(), for: .normal)
+        secondButton.backgroundColor = colorTools.createRandomColor()
+        view.backgroundColor = colorTools.createRandomColor()
+        secondButton.setTitleColor(colorTools.createRandomColor(), for: .normal)
         if ( secondButton.backgroundColor == .blue)
         {
             secondButton.backgroundColor = .yellow
         }
         else
         {
-            secondButton.backgroundColor = createRandomColor()
+            secondButton.backgroundColor = colorTools.createRandomColor()
         }
-        view.backgroundColor = createRandomColor()
+        view.backgroundColor = colorTools.createRandomColor()
         
-        myColorApp.textColor = createRandomColor()
-        myColorApp.backgroundColor = createRandomColor()
+        myColorApp.textColor = colorTools.createRandomColor()
+        myColorApp.backgroundColor = colorTools.createRandomColor()
         
         
         var timer = Timer()
@@ -53,16 +56,16 @@ class ViewController: UIViewController
         
     }
     
-    private func createRandomColor() -> UIColor
-    {
-        let newColor :UIColor
-        let redValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let greenValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        let blueValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
-        newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))
-        
-        return newColor
-    }
+//    private func createRandomColor() -> UIColor
+//    {
+//        let newColor :UIColor
+//        let redValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
+//        let greenValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
+//        let blueValue :CGFloat = CGFloat (Double (arc4random_uniform(256)) / 255.00)
+//        newColor = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: CGFloat(1.0))
+//
+//        return newColor
+//    }
     
     override func viewDidLoad()
     {
